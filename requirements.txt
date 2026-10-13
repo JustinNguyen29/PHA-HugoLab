@@ -1,0 +1,11 @@
+# Python 3.12 (env created with: conda create -p ./.venv python=3.12)
+panhumanpy==1.0.0
+tensorflow==2.17.0
+scikit-learn==1.6.0
+scanpy
+anndata
+pandas
+seaborn
+matplotlib
+ipykernel
+jupytext
