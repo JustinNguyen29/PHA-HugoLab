@@ -30,7 +30,10 @@ Notebooks are paired with `py:percent` scripts via jupytext — edit either, the
 | Notebook | What it does |
 |---|---|
 | `01_run_azimuth` | Runs PHA on the 6 lab sets from raw counts, maps labels to CL, writes `results/pha_<dataset>_predictions.csv`, `pha_<dataset>_embed.npy`, `pha_run_summary.csv` |
-| `02_compare` | Joins PHA / HCE v11 / LR per-cell predictions and computes CL-based exact, hierarchical, and lineage metrics |
+| `02_evaluate_vs_ground_truth` | Scores PHA against the lab labels in Cell Ontology space (exact / finer / coarser / wrong / unassigned), with per-class tables, confusion heatmaps, and confidence analysis → `results/eval_vs_truth/` |
+
+`label_crosswalk.csv` maps each lab label to the most specific CL term it justifies (hand-curated;
+edit it to change what counts as correct). `cl_utils.py` holds the CL is_a hierarchy helpers.
 
 ## Input contract (verified in panhumanpy 1.0.0 source)
 

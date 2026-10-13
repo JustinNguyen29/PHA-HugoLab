@@ -1,0 +1,78 @@
+dataset,raw_label,cl_id,cl_name,scorable,note
+glioma,CD4/CD8,CL:0000789,alpha-beta T cell,True,mixed CD4/CD8 T cells
+glioma,Pericyte,CL:0000669,pericyte,True,
+glioma,Endothelial,CL:0000115,endothelial cell,True,
+glioma,TAM-MG,CL:0000129,microglial cell,True,tumor-associated microglia
+glioma,TAM-BDM,CL:0000235,macrophage,True,tumor-associated bone-marrow-derived macrophage
+glioma,Oligodendrocyte,CL:0000128,oligodendrocyte,True,
+glioma,OPC,CL:0002453,oligodendrocyte precursor cell,True,
+glioma,Astrocyte,CL:0000127,astrocyte,True,
+glioma,Neuron,CL:0000540,neuron,True,
+glioma,DC,CL:0000451,dendritic cell,True,
+glioma,AC-like,CL:0001064,malignant cell,False,glioma malignant state; out of scope for PHA (healthy reference) - reported separately
+glioma,MES-like,CL:0001064,malignant cell,False,glioma malignant state; out of scope for PHA (healthy reference) - reported separately
+glioma,NPC-like,CL:0001064,malignant cell,False,glioma malignant state; out of scope for PHA (healthy reference) - reported separately
+glioma,OPC-like,CL:0001064,malignant cell,False,glioma malignant state; out of scope for PHA (healthy reference) - reported separately
+Brain_normal,oligodendrocyte,CL:0000128,oligodendrocyte,True,
+Brain_normal,oligodendrocyte_ISG_expressing,CL:0000128,oligodendrocyte,True,ISG state
+Brain_normal,oligodendrocyte_precursor_cell,CL:0002453,oligodendrocyte precursor cell,True,
+Brain_normal,neuron,CL:0000540,neuron,True,
+Brain_normal,GABAergic_interneuron,CL:0011005,GABAergic interneuron,True,
+Brain_normal,GABAergic_interneuron_SST,CL:4023017,sst GABAergic interneuron,True,
+Brain_normal,astrocyte_protoplasmic,CL:4042007,protoplasmic astrocyte,True,
+Brain_normal,astrocyte_fibrous_like,CL:4042008,fibrous astrocyte,True,"""fibrous-like"""
+Brain_normal,capillary_endothelial_cell,CL:0002144,capillary endothelial cell,True,
+Brain_normal,arterial_endothelial_cell,CL:1000413,endothelial cell of artery,True,
+Brain_normal,venous_endothelial_cell,CL:0002543,vein endothelial cell,True,
+Brain_normal,pericyte,CL:0000669,pericyte,True,
+Brain_normal,smooth_muscle_cell,CL:0000192,smooth muscle cell,True,
+Brain_normal,perivascular_fibroblast,CL:0000057,fibroblast,True,
+Brain_normal,meningeal_fibroblast,CL:0000057,fibroblast,True,
+Liver_normal,hepatocyte,CL:0000182,hepatocyte,True,
+Liver_normal,cholangiocyte,CL:1000488,cholangiocyte,True,
+Liver_normal,hepatic_stellate_cell_HGF_high,CL:0000632,hepatic stellate cell,True,
+Liver_normal,hepatic_stellate_cell_ACTA2_high,CL:0000632,hepatic stellate cell,True,
+Liver_normal,hepatic_stellate_cell_ACTA2_high_collagen_high,CL:0000632,hepatic stellate cell,True,
+Liver_normal,liver_pericentral_capillary_endothelial_cell,CL:0019022,endothelial cell of pericentral hepatic sinusoid,True,
+Liver_normal,liver_periportal_capillary_endothelial_cell,CL:0019021,endothelial cell of periportal hepatic sinusoid,True,
+Liver_normal,arterial_endothelial_cell,CL:1000413,endothelial cell of artery,True,
+Liver_normal,venous_endothelial_cell,CL:0002543,vein endothelial cell,True,
+Liver_normal,endothelial_cell_proliferating,CL:0000115,endothelial cell,True,cycling state
+Liver_normal,pericyte,CL:0000669,pericyte,True,
+Lymph_node_normal,LN_stroma_cell,CL:0000499,stromal cell,True,
+Lymph_node_normal,LN_stroma_cell_CHI3L1,CL:0000499,stromal cell,True,
+Lymph_node_normal,LN_fibroblast_collagen_high,CL:0000057,fibroblast,True,
+Lymph_node_normal,follicular_dendritic_cell,CL:0000442,follicular dendritic cell,True,
+Lymph_node_normal,capillary_endothelial_cell,CL:0002144,capillary endothelial cell,True,
+Lymph_node_normal,venous_endothelial_cell,CL:0002543,vein endothelial cell,True,
+Lymph_node_normal,arterial_endothelial_cell,CL:1000413,endothelial cell of artery,True,
+Lymph_node_normal,lymphatic_endothelial_cell,CL:0002138,endothelial cell of lymphatic vessel,True,
+Lymph_node_normal,pericyte,CL:0000669,pericyte,True,
+Lymph_node_normal,smooth_muscle_cell,CL:0000192,smooth muscle cell,True,
+Lymph_node_normal,adipocyte,CL:0000136,adipocyte,True,
+lymphoid,plasma_cell,CL:0000786,plasma cell,True,
+lymphoid,plasma_cell_proliferating,CL:0000786,plasma cell,True,cycling state
+lymphoid,B_cell,CL:0000236,B cell,True,
+lymphoid,B_cell_naive,CL:0000788,naive B cell,True,
+lymphoid,CD4_T_cell_naive_or_memory,CL:0000624,"CD4-positive, alpha-beta T cell",True,naive or memory -> parent
+lymphoid,CD4_T_cell_activated,CL:0000896,"activated CD4-positive, alpha-beta T cell",True,
+lymphoid,CD8_T_cell_early_activated,CL:0000906,"activated CD8-positive, alpha-beta T cell",True,
+lymphoid,CD8_T_cell_late_exhausted,CL:0020031,CD8-positive exhausted alpha-beta T cell,True,
+lymphoid,CD8_T_cell_proliferating,CL:4033074,"cycling CD8-positive, alpha-beta T cell",True,
+lymphoid,Treg_cell,CL:0000815,regulatory T cell,True,
+lymphoid,NK_cell,CL:0000623,natural killer cell,True,
+myeloid,macrophage_APOE_CHIT,CL:0000235,macrophage,True,
+myeloid,macrophage_F13A1,CL:0000235,macrophage,True,
+myeloid,macrophage_FOLR2,CL:0000235,macrophage,True,
+myeloid,macrophage_glycolytic,CL:0000235,macrophage,True,
+myeloid,macrophage_C3,CL:0000235,macrophage,True,
+myeloid,macrophage_VEGFA,CL:0000235,macrophage,True,
+myeloid,macrophage_ISG_expressing,CL:0000235,macrophage,True,
+myeloid,alveolar_macrophage,CL:0000583,alveolar macrophage,True,
+myeloid,monocyte_SOCS3,CL:0000860,classical monocyte,True,per v11 CANONICAL_LABEL_MAP
+myeloid,monocyte_CSF3R,CL:0000860,classical monocyte,True,per v11 CANONICAL_LABEL_MAP
+myeloid,monocyte_ITGAL,CL:0000875,non-classical monocyte,True,per v11 CANONICAL_LABEL_MAP
+myeloid,monocyte_AREG_EREG,CL:0000576,monocyte,True,
+myeloid,neutrophil,CL:0000775,neutrophil,True,
+myeloid,cDC1,CL:0002394,CD141-positive myeloid dendritic cell,True,human cDC1
+myeloid,mast_cell,CL:0000097,mast cell,True,
