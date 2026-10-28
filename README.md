@@ -31,9 +31,11 @@ Notebooks are paired with `py:percent` scripts via jupytext — edit either, the
 |---|---|
 | `01_run_azimuth` | Runs PHA on the 6 lab sets from raw counts, maps labels to CL, writes `results/pha_<dataset>_predictions.csv`, `pha_<dataset>_embed.npy`, `pha_run_summary.csv` |
 | `02_evaluate_vs_ground_truth` | Scores PHA against the lab labels in Cell Ontology space (exact / finer / coarser / wrong / unassigned), with per-class tables, confusion heatmaps, and confidence analysis → `results/eval_vs_truth/` |
+| `03_qc_and_pha` | Paper pipeline: scanpy QC (min genes, % mt, MAD outliers, scrublet per patient) → PHA on passing cells → confidence per dataset / manual cluster → `results/qc_pha/` |
+| `04_cluster_agreement` | Ontology-free comparison of PHA vs manual clusters in PHA-embedding and expression-PCA space (cosine): intra-cluster distances, silhouette, ARI/NMI, whether PHA's within-cluster splits are real (permutation test), suspect / likely-mislabelled cells → `results/cluster_agreement/` |
 
 `label_crosswalk.csv` maps each lab label to the most specific CL term it justifies (hand-curated;
-edit it to change what counts as correct). `cl_utils.py` holds the CL is_a hierarchy helpers.
+edit it to change what counts as correct). `cl_utils.py` holds the CL is_a hierarchy helpers; `pha_utils.run_pha` wraps the PHA call used by 01 and 03.
 
 ## Input contract (verified in panhumanpy 1.0.0 source)
 
